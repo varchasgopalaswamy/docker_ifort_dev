@@ -1,0 +1,5 @@
+packages:
+    cmake:
+        paths:
+            cmake@3.17.3: /usr/
+        buildable: False
