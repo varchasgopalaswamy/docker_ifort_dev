@@ -1,5 +1,9 @@
 packages:
-    cmake:
-        paths:
-            cmake@3.17.3: /usr/
-        buildable: False
+  m4:
+    externals:
+    - spec: "m4"
+      prefix: /usr
+  cpio:
+    externals:
+    - spec: "cpio"
+      prefix: /usr
