@@ -1,3 +1,3 @@
 #!/bin/bash
-tag=9.3
-docker build -t varchasgopalaswamy/ifort-rhel-dev:${tag} -f Dockerfile .
+tag=1.0
+docker build -t varchasgopalaswamy/ifort-dev:${tag} -f Dockerfile .
