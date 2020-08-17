@@ -31,7 +31,6 @@ titlecase
 yapf
 inflection
 h5py
-bezier==0.10.0
 svg.path
 lxml
 black
