@@ -51,4 +51,4 @@ RUN spack install netcdf-fortran+mpi%intel^hdf5%intel+cxx~debug+fortran+hl~java+
 RUN eval `spack load --sh hdf5` && eval `spack load --sh cmake` && echo $(which cmake) && wget https://github.com/Goddard-Fortran-Ecosystem/pFUnit/releases/download/v4.1.7/pFUnit.tar && tar -xvf pFUnit.tar && cd pFUnit-4.1.7 && mkdir build && cd build && export CC=mpiicc && export FC=mpiifort && cmake .. -DCMAKE_C_COMPILER=${CC} -DCMAKE_Fortran_COMPILER=${FC} -DCMAKE_INSTALL_PREFIX=/software/ && make -j && make -j install
 
 COPY requirements.txt ${WORKDIR}/requirements.txt 
-RUN eval "$(/software/miniconda/bin/conda shell.bash hook)" && conda install -y h5py && conda install -y -c conda-forge cartopy && pip install PyQt5 f90nml --upgrade && pip install -r ${WORKDIR}/requirements.txt 
+RUN eval "$(/software/miniconda/bin/conda shell.bash hook)" && conda install -y h5py && conda install -y -c conda-forge cartopy netcdf4 && pip install PyQt5 f90nml ipykernel --upgrade && pip install -r ${WORKDIR}/requirements.txt 
