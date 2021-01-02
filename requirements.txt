@@ -48,3 +48,5 @@ pytest
 coverage
 gunicorn==19.9.0
 plotly>=4.5.2
+bezier==0.10.0
+pytest
