@@ -7,3 +7,7 @@ packages:
     externals:
     - spec: "cpio"
       prefix: /usr
+  cmake:
+    externals:
+    - spec: "cmake"
+      prefix: /software/cmake
