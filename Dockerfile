@@ -1,7 +1,6 @@
 FROM intel/oneapi-hpckit
 
-RUN apt-get update && apt-get install -y wget emacs-nox make tar zlib1g-dev curl
-RUN apt-get install -y libssl-dev sudo git m4 libncurses5-dev libncursesw5-dev
+RUN apt-get update && apt-get install -y wget emacs-nox make tar zlib1g-dev curl libssl-dev sudo git m4 libncurses5-dev libncursesw5-dev libgsl-dev
 
 # Add a default non-root user to run mpi jobs
 ARG USER=user
